@@ -12,8 +12,11 @@ div:hover {border-style: outset;}
 
 div, h3 { color: rgb(43, 5, 5); }
 
-#size { font-size: 30px;}
 
-h3 tr:nth-child(odd) { 
-    background-color: red;
+div:nth-of-type(3) h3 {
+    font-size: 30px;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic;
 }
