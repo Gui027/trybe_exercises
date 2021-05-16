@@ -1,0 +1,19 @@
+div:hover {border-style: outset;}
+
+.prima {background-color: red;}
+
+.secun {background-color: blue;}
+
+.comple {background-color: purple;}
+
+.escur {background-color: greenyellow;}
+
+.clara {background-color: yellow;}
+
+div, h3 { color: rgb(43, 5, 5); }
+
+#size { font-size: 30px;}
+
+h3 tr:nth-child(odd) { 
+    background-color: red;
+}
