@@ -1,0 +1,6 @@
+ol { 
+    background-color: yellow;
+}
+
+ol :nth-child(even) {color: green;}
+
