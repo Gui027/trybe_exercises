@@ -14,7 +14,6 @@ console.log(indexOfPortfolio); */
 
 //Ex 3 
 
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+/*let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 menu.push('Contato')
-
-console.log(menu);
+console.log(menu); */
