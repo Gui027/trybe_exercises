@@ -64,9 +64,14 @@
     document.body.appendChild(elementH1);
 
     //ex2
-    const elementdiv = document.createElement('div');
-    elementdiv.className = 'main-content';
-    document.body.appendChild(elementdiv);
+    const elementDivMain = document.createElement('div');
+    elementDivMain.className = 'main-content';
+    document.body.appendChild(elementDivMain);
+
+    //ex3
+    const elementDivCenter = document.createElement('div');
+    elementDivCenter.className = 'center-content';
+    elementDivMain.appendChild(elementDivCenter);
 
 
     </script>
