@@ -94,6 +94,16 @@
     elementImg.src = 'https://picsum.photos/200';
     elementDivLeft.appendChild(elementImg);
 
+    //ex8
+    const elementUl = document.createElement('ul');
+    elementDivRight.appendChild(elementUl);
+    const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let index in arrayNumbers) {
+        const elementLi = document.createElement('li');
+        elementLi.innerHTML = arrayNumbers[index];
+        elementUl.appendChild(elementLi);
+    }
+
 
 
 
