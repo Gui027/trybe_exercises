@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+  
+    //ex1
+    function changeText() {  
+    let paragraph = document.getElementsByTagName('p')[1];
+      paragraph.innerText = 'Estar trabalhando em uma Grande Empresa ou/e ter meu proprio APP!'
+    }
+      changeText(); 
+
+    //ex2
+      function square() {
+      let square1 = document.getElementsByClassName('main-content')[0];
+      square1.style.backgroundColor = 'rgb(76,164,109)';
+    }
+      square();
+
+      //ex3
+      function squareWhite() {
+        let squareW = document.getElementsByClassName('center-content')[0];
+        squareW.style.backgroundColor = 'white';
+      }
+      squareWhite();
+
+      //ex4
+      function textCorrect () {
+        let correct = document.getElementsByTagName('h1')[0];
+        correct.innerText = 'Exercício 5.1 - JavaScript'
+      }
+      textCorrect();
+
+      //ex5
+      function upperCase() {
+        let upper = document.getElementsByTagName('p')[0];
+        upper.innerText = upper.innerText.toUpperCase();
+      }
+      upperCase();
+
+      //ex6
+      function showContentsP() {
+        let content = document.getElementsByTagName('p');
+        for(let index = 0; index < content.length; index += 1); {
+        console.log(content[index].innerHTML);
+      }
+    }
+      showContentsP();
+
+
+    </script>
+  </body>
+</html>
