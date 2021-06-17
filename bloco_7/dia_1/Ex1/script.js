@@ -1,3 +1,5 @@
+//Ex1
+
 function testingScope(escopo) {
     if (escopo === true) {
       var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -11,3 +13,18 @@ function testingScope(escopo) {
   }
 
   testingScope(true);
+
+  //Ex2
+
+  const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+// Seu código aqui.
+oddsAndEvens.sort(function(a,b) {return a-b})
+
+console.log(oddsAndEvens);
+
+//Parte2
+//Ex1
+
+const factorial = number => number > 1 ? number * factorial(number-1) : 'Erro'
+console.log(factorial(5));
