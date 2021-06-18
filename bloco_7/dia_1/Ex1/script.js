@@ -24,8 +24,17 @@ console.log(oddsAndEvens);
 
 //Parte2
 //Ex1
+const Fatorial = number => {
+  let resultado = 1;
+  for (let index = 2; index <= number; index++){
+    resultado *= index;
+  }
+  return resultado;
+}
+console.log(Fatorial(5));
 
-const factorial = number => number > 1 ? number * factorial(number-1) : 'Erro'
+
+const factorial = number => number > 1 ? number * factorial(number-1) : 1
 console.log(factorial(5));
 
 //Ex2
