@@ -179,6 +179,6 @@ assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
 const expectedResult = false;
 
 function authorUnique() {
-  return books.some((a, b) => (a.birthYear - b.birthYear) == 0)
+  return books.some((a, b) => a.birthYear - b.birthYear)
 }
 assert.strictEqual(authorUnique(), expectedResult);
